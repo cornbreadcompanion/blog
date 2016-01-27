@@ -1,5 +1,5 @@
 sitename: The Cornbread Companion
-baseurl: /
+baseurl:
 permalink: pretty
 markdown: rdiscount
 prose:

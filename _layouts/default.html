@@ -1,15 +1,11 @@
----
-title: 'The Cornbread Companion'
----
 <!DOCTYPE html>
 <html>
   <head>
-    <title>{% if page.url != '/index.html' %}| {{page.title}}{% endif %} | The Cornbread Companion</title>
-    <meta charset='UTF-8'/>
-    <meta name='viewport' content='width=device-width' />
-    <link rel='shortcut icon' href='{{site.baseurl}}/img/favicon.ico' type='image/x-icon' />
-    <link href='https://fonts.googleapis.com/css?family=Old+Standard+TT:400,400italic,700' rel='stylesheet' type='text/css'>
-    <link href='{{site.baseurl}}/site.css' rel='stylesheet' />
+    <title>{% if page.title %}{{page.title}} // {{site.sitename}}{% else %}{{site.sitename}}{% endif %}</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT:400,400italic,700" rel="stylesheet" type="text/css">
+    <style type="text/css">{% include site.min.css %}</style>
   </head>
   <body>
     <header role="banner" id="Header">
@@ -21,7 +17,7 @@ title: 'The Cornbread Companion'
     </main>
 
     <nav role="navigation" id="Nav">
-      <a class='{% if page.url == "about/" %}active{% endif %}' href='{{site.baseurl}}/about'>About</a>
+      <a href="{{site.baseurl}}/about">About</a>
     </nav>
   </body>
 </html>
