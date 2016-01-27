@@ -1,6 +1,6 @@
 sitename: The Cornbread Companion
 baseurl: ""
-permalink: :title
+permalink: pretty
 markdown: rdiscount
 prose:
   rooturl: '_posts'
