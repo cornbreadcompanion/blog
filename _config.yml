@@ -1,11 +1,11 @@
 sitename: The Cornbread Companion
-baseurl: "/blog"
+baseurl: ""
 permalink: /:year/:month/:title/
 markdown: rdiscount
 prose:
   rooturl: '_posts'
-  siteurl: 'http://cornbreadcompanion.github.io/blog/'
-  relativeLinks: 'http://cornbreadcompanion.github.io/blog/links.jsonp'
+  siteurl: 'http://cornbreadcompanion.com'
+  relativeLinks: 'http://cornbreadcompanion.com/links.jsonp'
   media: 'media'
   metadata:
     _posts:
