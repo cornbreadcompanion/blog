@@ -83,6 +83,7 @@ blockquote {
   quotes: "\201C""\201D";
   font-style: italic;
 }
+
 blockquote:before {
   color: #ccc;
   content: open-quote;
@@ -91,8 +92,15 @@ blockquote:before {
   margin-right: 0.125em;
   vertical-align: -0.4em;
 }
+
 blockquote p {
   display: inline;
+}
+
+cite {
+  display: block;
+  text-align: right;
+  margin-top: 5px;
 }
 
 *, *:before, *:after {
