@@ -123,14 +123,14 @@ body {
   }
 }
 
-a {
+a:not(.Post-content-link) {
   border-bottom: 2px solid transparent;
   text-decoration: none;
   color: #565859;
 }
 
-a:hover,
-a:focus {
+a:not(.Post-content-link):hover,
+a:not(.Post-content-link):focus {
   color: #D9B54A;
   text-decoration: underline;
 }
@@ -168,6 +168,27 @@ a:focus {
   border-bottom: 1px solid #ccc;
 }
 
+  .Post-content-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  .Post-content-link:hover,
+  .Post-content-link:focus  {
+    color: #D9B54A;
+  }
+
+  @media screen and (max-width: 700px) {
+    .Post-content-link {
+      flex-direction: column;
+    }
+
+    .Post-content-wrap {
+      margin-bottom: 1em;
+    }
+  }
+
   .Post-content h2 {
     margin: 0;
   }
@@ -192,10 +213,15 @@ a:focus {
   font-style: italic;
 }
 
+@media screen and (min-width: 700px) {
+  .Post-image-wrap {
+    max-width: 35%;
+    margin-left: 1em;
+  }
+}
+
+
 .Hero {
-  width: 100vw;
-  position: relative;
-  left: calc(-50vw + 50%);
   margin: 2em 0;
 }
 

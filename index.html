@@ -8,12 +8,22 @@ section: blog
     {% capture date %}{{ item.date | date: '%B %Y' }}{% endcapture %}
     {% capture ndate %}{{ item.next.date | date: '%B %Y' }}{% endcapture %}
     <li class="Post-content">
-      <span class="Post-date">{{item.date | date:"%B %-d, %Y"}}</span>
-      <h2><a href="{{site.baseurl}}{{item.url}}">{{item.title}}</a></h2>
-      <p>
-        {{ item.content | strip_html | truncatewords: 50 }}
-        <br><a href="{{site.baseurl}}{{item.url}}" class="Post-more">Read More</a>
-      </p>
+      <a href="{{site.baseurl}}{{item.url}}" class="Post-content-link">
+        <div class="Post-content-wrap">
+          <span class="Post-date">{{item.date | date:"%B %-d, %Y"}}</span>
+          <h2>{{item.title}}</h2>
+          <p>
+            {{ item.content | strip_html | truncatewords: 40 }}
+            <br><span href="{{site.baseurl}}{{item.url}}" class="Post-more">Read More</span>
+          </p>
+        </div>
+
+        {% if item.preview %}
+        <div class="Post-image-wrap">
+          <img src="{{item.preview}}" alt="">
+        </div>
+        {% endif %}
+      </a>
     </li>
   {% endfor %}
 </ol>
