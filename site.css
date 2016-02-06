@@ -123,15 +123,18 @@ body {
   }
 }
 
-a:not(.Post-content-link) {
-  border-bottom: 2px solid transparent;
+a {
   text-decoration: none;
   color: #565859;
 }
 
+a:hover,
+a:focus {
+  color: #D9B54A;
+}
+
 a:not(.Post-content-link):hover,
 a:not(.Post-content-link):focus {
-  color: #D9B54A;
   text-decoration: underline;
 }
 
