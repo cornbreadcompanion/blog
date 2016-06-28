@@ -71,3 +71,8 @@ prose:
           element: "text"
           label: "Permalink"
           value: ""
+      - name: "banner"
+        field:
+          element: "text"
+          label: "Banner Image"
+          value: ""
