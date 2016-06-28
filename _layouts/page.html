@@ -2,5 +2,17 @@
 layout: default
 ---
 
+{% if page.banner %}
+  {% if page.banner contains "http" %}
+    {% capture url %}{{page.banner}}{% endcapture %}
+  {% else %}
+    {% capture url %}{{site.baseurl}}{{page.banner}}{% endcapture %}
+  {% endif %}
+
+  <div class="Hero">
+    <img src="{{url}}" alt="" />
+  </div>
+{% endif %}
+
 <h2>{{page.title}}</h2>
 {{content}}
