@@ -2,12 +2,12 @@
 layout: blog
 category: blog
 banner: /media/victory.jpeg
-preview: "/media/victory-preview.jpeg"
-tags: 
+tags:
   - death
   - jesus
 published: true
-title: "O death, where is your victory?"
+title: 'O death, where is your victory?'
+preview: /media/victory.jpeg
 ---
 
 Recently, I was listening to a song called _“The Shepherd”_ by The Walking Tree. One line in the song says, _“My days are numbered, I can’t fall asleep.”_ As soon as I heard those words, fear infected me like the black plague. _“My days are numbered”_… instantly I was reminded that my life is fleeting and that it could be gone tomorrow. My mind raced to my baby on the way, my husband that I love dearly, and the realization that my loved ones and I won’t last forever. Someday I will draw my final breath and only the Lord knows when that time is. This is a dreadful and terrifying thought.
